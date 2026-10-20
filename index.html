@@ -57,6 +57,8 @@
     transition:background .15s;
   }
   .navcta:hover{background:var(--blue);}
+  .account-nav{display:flex;align-items:center;gap:20px}.login-link{font-size:13px;text-underline-offset:4px}
+  @media(max-width:480px){.account-nav{gap:12px}.navcta{padding:10px 12px}.login-link{font-size:12px}}
   @media (max-width:734px){ .navlinks{display:none;} }
 
   /* HERO */
@@ -260,7 +262,7 @@
       <a href="#how">How it works</a>
       <a href="#privacy">Privacy</a>
     </div>
-    <a href="#get-started" class="navcta">Get started</a>
+    <div class="account-nav"><a href="/account/" class="login-link">Sign in</a><a href="/account/" class="navcta">My dashboard</a></div>
   </nav>
 </header>
 
