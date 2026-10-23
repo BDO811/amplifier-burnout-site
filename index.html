@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amplifier for Zoom. Burnout you can finally measure.</title>
-<meta name="description" content="Amplifier listens to the calls your executives are already on and turns voice into an early warning system for fatigue and burnout.">
+<title>Amplifier for Zoom &amp; Google Meet. Burnout you can finally measure.</title>
+<meta name="description" content="Amplifier listens to the Zoom and Google Meet calls your executives are already on and turns voice into an early warning system for fatigue and burnout.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#1d1d1f;
@@ -25,7 +28,8 @@
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    font-weight:700;
     color:var(--ink);
     background:var(--paper);
     -webkit-font-smoothing:antialiased;
@@ -61,18 +65,36 @@
 
   /* HERO */
   .hero{
+    position:relative;
+    overflow:hidden;
     text-align:center;
     padding:96px 24px 72px;
-    background:linear-gradient(180deg,#fbfbfd 0%,#ffffff 100%);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:#000;
   }
+  .hero-video{
+    position:absolute;inset:0;
+    width:100%;height:100%;
+    object-fit:cover;
+    opacity:0.6;
+    pointer-events:none;
+  }
+  .hero-video-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(255,255,255,0.80) 0%,rgba(255,255,255,0.88) 55%,rgba(255,255,255,0.96) 100%);
+    pointer-events:none;
+  }
+  .hero > .wrap{position:relative;z-index:1;width:100%;}
   .eyebrow{
-    font-size:13px;font-weight:600;color:var(--blue);
+    font-size:13px;font-weight:800;color:var(--blue);
     letter-spacing:0.01em;margin:0 0 14px;
   }
   h1.hero-title{
     font-size:clamp(40px,6vw,76px);
     line-height:1.05;
-    font-weight:700;
+    font-weight:800;
     letter-spacing:-0.015em;
     margin:0 auto 20px;
     max-width:920px;
@@ -83,12 +105,12 @@
     color:var(--ink-soft);
     max-width:620px;
     margin:0 auto 36px;
-    font-weight:400;
+    font-weight:700;
   }
   .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:64px;}
   .btn{
     display:inline-block;font-size:17px;padding:12px 26px;border-radius:var(--radius-pill);
-    font-weight:500;transition:transform .15s ease, background .15s ease;
+    font-weight:700;transition:transform .15s ease, background .15s ease;
   }
   .btn-primary{background:var(--blue);color:#fff;}
   .btn-primary:hover{background:var(--blue-dark);transform:translateY(-1px);}
@@ -112,12 +134,12 @@
   section.dim{background:var(--paper-dim);}
   .section-head{text-align:center;max-width:680px;margin:0 auto 64px;}
   .kicker{
-    font-size:13px;font-weight:600;color:var(--ink-faint);
+    font-size:13px;font-weight:800;color:var(--ink-faint);
     text-transform:uppercase;letter-spacing:0.08em;margin:0 0 14px;
   }
   h2{
     font-size:clamp(32px,4vw,48px);
-    line-height:1.08;font-weight:700;letter-spacing:-0.015em;margin:0 0 18px;
+    line-height:1.08;font-weight:800;letter-spacing:-0.015em;margin:0 0 18px;
   }
   .section-head p{font-size:19px;line-height:1.5;color:var(--ink-soft);margin:0;}
 
@@ -144,7 +166,7 @@
     display:flex;justify-content:space-between;gap:24px;align-items:baseline;
   }
   .framework-list li:last-child{border-bottom:1px solid var(--line);}
-  .framework-name{font-weight:600;font-size:16px;color:var(--ink);min-width:220px;}
+  .framework-name{font-weight:700;font-size:16px;color:var(--ink);min-width:220px;}
   .framework-desc{font-size:15px;color:var(--ink-soft);line-height:1.5;text-align:right;}
   @media (max-width:640px){
     .framework-list li{flex-direction:column;}
@@ -159,10 +181,10 @@
     background:#fff;border:1px solid var(--line);border-radius:var(--radius-md);
     padding:32px 28px;
   }
-  .signal-card h4{font-size:17px;font-weight:600;margin:0 0 10px;}
+  .signal-card h4{font-size:17px;font-weight:700;margin:0 0 10px;}
   .signal-card p{font-size:15px;color:var(--ink-soft);line-height:1.55;margin:0;}
   .signal-tag{
-    display:inline-block;font-size:11px;font-weight:600;color:var(--blue);
+    display:inline-block;font-size:11px;font-weight:700;color:var(--blue);
     background:rgba(0,113,227,0.08);padding:4px 10px;border-radius:999px;margin-bottom:14px;
   }
 
@@ -195,7 +217,7 @@
   .privacy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border-radius:var(--radius-md);overflow:hidden;}
   @media (max-width:760px){ .privacy-grid{grid-template-columns:1fr;} }
   .privacy-item{background:#fff;padding:36px 32px;}
-  .privacy-item h4{font-size:16px;font-weight:600;margin:0 0 10px;display:flex;align-items:center;gap:10px;}
+  .privacy-item h4{font-size:16px;font-weight:700;margin:0 0 10px;display:flex;align-items:center;gap:10px;}
   .privacy-item p{font-size:15px;color:var(--ink-soft);line-height:1.6;margin:0;}
   .check{
     width:20px;height:20px;border-radius:50%;background:var(--blue);
@@ -223,7 +245,7 @@
   .sources ol{padding-left:18px;margin:0;}
   .sources a{color:var(--ink-soft);text-decoration:underline;}
   .sources li{margin-bottom:10px;}
-  sup{color:var(--blue);font-weight:600;font-size:0.7em;}
+  sup{color:var(--blue);font-weight:700;font-size:0.7em;}
 
   .reveal{opacity:1;transform:none;}
   @media (prefers-reduced-motion: no-preference){
@@ -256,7 +278,7 @@
     <div class="navlinks">
       <a href="#problem">The problem</a>
       <a href="#science">The science</a>
-      <a href="#zoom">Why Zoom</a>
+      <a href="#zoom">Why video calls</a>
       <a href="#how">How it works</a>
       <a href="#privacy">Privacy</a>
     </div>
@@ -265,12 +287,15 @@
 </header>
 
 <section class="hero">
+  <video class="hero-video" src="assets/hero-working.mp4" poster="assets/hero-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video>
+  <div class="hero-video-overlay" aria-hidden="true"></div>
   <div class="wrap">
-    <p class="eyebrow">AMPLIFIER FOR ZOOM</p>
+    <p class="eyebrow">AMPLIFIER FOR ZOOM &amp; GOOGLE MEET</p>
     <h1 class="hero-title">Burnout doesn't show up on a survey.<br>It shows up in the voice.</h1>
-    <p class="hero-sub">Amplifier listens to the calls your executives are already on and turns voice into an early warning system for fatigue, strain, and burnout, weeks before a self-assessment would ever catch it.</p>
+    <p class="hero-sub">Amplifier listens to the Zoom and Google Meet calls your executives are already on and turns voice into an early warning system for fatigue, strain, and burnout, weeks before a self-assessment would ever catch it.</p>
     <div class="cta-row">
       <a href="#get-started" class="btn btn-primary">Add to Zoom</a>
+      <a href="https://chromewebstore.google.com/detail/amplifier-for-google-meet/kdablajjomdenccggopicgkmddjgdcem" target="_blank" rel="noopener" class="btn btn-primary">Add to Google Meet</a>
       <a href="#science" class="btn btn-secondary">See the science</a>
     </div>
     <div class="waveform-stage">
@@ -393,7 +418,7 @@
   <div class="wrap">
     <div class="dark-panel reveal">
       <div class="section-head">
-        <p class="kicker" style="color:#a1a1a6;">Why Zoom</p>
+        <p class="kicker" style="color:#a1a1a6;">Why video calls</p>
         <h2>The data already exists. It has just never been measured.</h2>
         <p>Executives do not need a new habit to build. They need the hours they already spend on video to start working for them.</p>
       </div>
@@ -426,7 +451,7 @@
       </div>
       <div class="reveal">
         <p class="kicker">Already a normal part of the call</p>
-        <h3>Recording and transcription are no longer unusual on a Zoom call.</h3>
+        <h3>Recording and transcription are no longer unusual on a Zoom or Google Meet call.</h3>
         <p>Call recording, AI note-taking, and transcript generation are now standard features on most executive calendars, Otter.ai alone has transcribed more than a billion meetings.<sup>17</sup> Amplifier extends that same, already-accepted audio pipeline into a wellness signal, with no new consent friction and no new tool to adopt.</p>
       </div>
     </div>
@@ -442,8 +467,8 @@
     <div class="steps reveal">
       <div class="step">
         <div class="step-num">01</div>
-        <h4>Install for Zoom</h4>
-        <p>An executive or their team adds Amplifier from the Zoom App Marketplace in under a minute. No hardware, no new device, no change to how calls are run.</p>
+        <h4>Install for Zoom or Google Meet</h4>
+        <p>An executive or their team adds Amplifier from the Zoom App Marketplace or the Chrome Web Store in under a minute. No hardware, no new device, no change to how calls are run.</p>
       </div>
       <div class="step">
         <div class="step-num">02</div>
@@ -481,7 +506,7 @@
       </div>
       <div class="privacy-item">
         <h4><span class="check">✓</span> Built on Amplifier's voice model</h4>
-        <p>The same vocal biomarker technology behind Amplifier's clinical and wellness screening tools, developed and validated outside of the Zoom integration itself.</p>
+        <p>The same vocal biomarker technology behind Amplifier's clinical and wellness screening tools, developed and validated outside of the Zoom and Google Meet integrations themselves.</p>
       </div>
     </div>
   </div>
@@ -490,9 +515,10 @@
 <section class="final-cta" id="get-started">
   <div class="wrap">
     <h2>Give your calls a second job.</h2>
-    <p>Add Amplifier to Zoom and start building a fatigue and burnout baseline for your leadership team today.</p>
+    <p>Add Amplifier to Zoom or Google Meet and start building a fatigue and burnout baseline for your leadership team today.</p>
     <div class="cta-row">
       <a href="#" class="btn btn-primary">Add to Zoom</a>
+      <a href="https://chromewebstore.google.com/detail/amplifier-for-google-meet/kdablajjomdenccggopicgkmddjgdcem" target="_blank" rel="noopener" class="btn btn-primary">Add to Google Meet</a>
       <a href="#" class="btn btn-secondary">Talk to us</a>
     </div>
   </div>
