@@ -1,4 +1,4 @@
-Amplifier Burnout is the look of burnout.amplifierhealth.com, the Amplifier for Zoom product that reads fatigue and stress from how a person sounds on calls, as a private trend against their own baseline. It is a wellness signal, never a diagnosis. It uses the Amplifier Cream palette and the same editorial look as the rest of Amplifier.
+Amplifier Burnout is the look of burnout.amplifierhealth.com, the Amplifier for Zoom and Google Meet product that reads fatigue and stress from how a person sounds on calls, as a private trend against their own baseline. It is a wellness signal, never a diagnosis. It uses the Amplifier Apple White palette: white and near-black ground, Apple blue as the single accent, the same editorial layout and type system as the rest of Amplifier.
 
 ## How to build with it
 
