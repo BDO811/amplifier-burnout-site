@@ -1,0 +1,1 @@
+TrendChart draws two series scaled 0 to 1 against the person's own baseline band (default 0.4 to 0.6). Fatigue is always the solid thick line in `signal-fatigue`; stress is always the dashed line in `signal-stress`. The legend is part of the component and must stay. The consumer provides equal length arrays of at least two points. Show it with a StateChip, never with a diagnosis.

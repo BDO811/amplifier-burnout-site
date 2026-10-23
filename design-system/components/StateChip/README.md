@@ -1,0 +1,1 @@
+StateChip shows where a person sits against their own baseline. It always prints the word, because the four colors are not told apart by lightness alone. Do not use it as a diagnosis or score; pair it with the trend. Pass `label` only to change the wording, never to drop it.

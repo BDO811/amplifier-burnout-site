@@ -1,0 +1,1 @@
+amplifier-wordmark.svg is the Amplifier Health wordmark in the brand green `#1e5631`. A single ink SVG shown with `<img>`, so the ink is fixed in the file. Use it top left on `surface-100`. Do not recolor, stretch or redraw it.

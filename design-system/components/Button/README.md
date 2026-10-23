@@ -1,0 +1,1 @@
+Button is the one action control. Use `primary` once per view for the main action such as Add to Zoom, `secondary` beside it for See the science, `ghost` for tertiary links like Sign in. The consumer provides the label as children and an optional `href` to render a link. Do not stack two primary buttons. Focus shows the `focus` ring.

@@ -1,0 +1,45 @@
+/* Amplifier Burnout: generated from tokens.json */
+:root, [data-theme="cream"] {
+  --surface-100: #efe9df;
+  --surface-200: #e6dfd2;
+  --ink: #161412;
+  --ink-muted: #5a5348;
+  --rule: #d8d0c2;
+  --panel: #161412;
+  --panel-ink: #efe9df;
+  --brand: #1e5631;
+  --on-brand: #efe9df;
+  --signal-fatigue: #2a2f8f;
+  --signal-stress: #c25f00;
+  --state-baseline: #256b45;
+  --state-watch: #9a6a00;
+  --state-elevated: #b3480a;
+  --state-high: #a3201a;
+  --focus: #2a2f8f;
+  --panel-fatigue: #a9aef2;
+  --panel-stress: #f0a63a;
+  --panel-good: #6fcf97;
+  --panel-alert: #ff6b5e;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+.display-xl { font-family: var(--font-display); font-size: 64px; line-height: 60px; font-weight: 300; }
+.display-xl-italic { font-family: var(--font-display); font-size: 64px; line-height: 60px; font-weight: 300; font-style: italic; }
+.display-lg { font-family: var(--font-display); font-size: 36px; line-height: 40px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 400; }
+.body-sm { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 400; }
+.label { font-family: var(--font-mono); font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: 0.14em; }
+.readout { font-family: var(--font-mono); font-size: 28px; line-height: 32px; font-weight: 400; }

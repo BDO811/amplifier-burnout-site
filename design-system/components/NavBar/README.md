@@ -1,0 +1,1 @@
+NavBar sets the wordmark left (text only until the logo file is supplied), section anchors center and account actions right, over a hairline. Provide `links` as label and href pairs and `actions` as buttons. Keep to five anchors.

@@ -1,0 +1,30 @@
+<!-- @dsCard height=300 -->
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inter:wght@400&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:var(--surface-100)}
+.wrap{position:relative;width:960px;height:300px;overflow:hidden}
+.name{position:absolute;left:32px;bottom:28px;width:420px}
+.name h1{margin:0;font:300 84px/.95 "Cormorant Garamond",Georgia,serif;color:var(--ink)}
+.name p{margin:12px 0 0;font:400 14px/20px Inter,system-ui,sans-serif;color:var(--ink-muted)}
+svg{position:absolute;left:0;top:0}
+.brand{fill:var(--brand);rx:var(--radius-sm)}.panel{fill:var(--panel);rx:var(--radius-sm)}
+.stress{fill:var(--signal-stress);rx:var(--radius-sm)}.fat{fill:var(--signal-fatigue);rx:var(--radius-sm)}
+.tint{fill:var(--surface-200);rx:var(--radius-sm)}.arc{fill:none;stroke:var(--brand);stroke-width:2}
+</style></head><body><div class="wrap">
+<svg width="960" height="300" viewBox="0 0 960 300">
+<!-- derivation
+blocks: brand 160x300 slab, panel 188x176, signal-stress 108x112, signal-fatigue 120x112, surface-200 176x176.
+arrangement: staggered stack right of x=480, one tall slab with satellites, blocks bleed off top and bottom edges.
+pattern: literal motif, concentric arcs like a voice wave radiating, cut into the surface-200 block in brand.
+steps and radii: space-1 to space-12 multiples (4, 8, 12, 48), radius-sm on every block. -->
+<defs><clipPath id="c"><rect x="784" y="124" width="176" height="176" rx="4"/></clipPath></defs>
+<rect class="brand" x="480" y="0" width="160" height="300"/>
+<rect class="panel" x="652" y="0" width="188" height="176"/>
+<rect class="stress" x="852" y="0" width="108" height="112"/>
+<rect class="fat" x="652" y="188" width="120" height="112"/>
+<rect class="tint" x="784" y="124" width="176" height="176"/>
+<g clip-path="url(#c)"><circle class="arc" cx="960" cy="300" r="44"/><circle class="arc" cx="960" cy="300" r="88"/><circle class="arc" cx="960" cy="300" r="132"/><circle class="arc" cx="960" cy="300" r="176"/></g>
+</svg>
+<div class="name"><h1>Amplifier<br>Burnout</h1><p>Hear fatigue before it becomes burnout.</p></div>
+</div></body></html>

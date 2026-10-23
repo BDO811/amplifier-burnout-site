@@ -1,0 +1,1 @@
+SnapshotPanel is the dark `panel` with a mono title and label and value rows. Each row takes a `tone` (`fatigue`, `stress`, `good`, `alert`) that maps to the panel colors. Keep to four rows. Use one per view as the product readout.

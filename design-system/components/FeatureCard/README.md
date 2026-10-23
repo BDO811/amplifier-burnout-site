@@ -1,0 +1,1 @@
+FeatureCard explains one acoustic measure in a `surface-200` card with a hairline border: a kicker, a serif title and a short body in `ink-muted`. Use one per measure in the science grid, three or six at a time. Do not add a colored left border.

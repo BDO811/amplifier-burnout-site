@@ -1,0 +1,1 @@
+Kicker is the small uppercase mono label above a headline, with a 2px top rule that carries the section accent: `brand` by default, `fatigue`, `stress` or `high`. The label text itself stays `ink-muted` so it holds contrast; only the rule changes color. One kicker per section, written as a short noun phrase.

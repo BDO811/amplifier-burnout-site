@@ -1,0 +1,1 @@
+PricingCard shows a tier name in mono, a price in the display face, one line of detail and a button. Mark one tier `featured` to give it a `brand` border. Tier names are music words (Spark, Groove, Encore); keep that voice to pricing and the closing call to action.

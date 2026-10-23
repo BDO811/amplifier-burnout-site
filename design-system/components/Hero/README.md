@@ -1,0 +1,1 @@
+Hero stacks a kicker, a two line headline (`line1` in Light, `line2` in Light Italic), a lede in `ink-muted` and up to two buttons. Write the headline as a short declarative claim. The lede states the product in one sentence and never implies a diagnosis.

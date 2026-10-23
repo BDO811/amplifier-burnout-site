@@ -1,0 +1,1 @@
+CheckItem is one commitment in the privacy list: a `brand` checkmark and a short sentence in `ink`. Use inside a `ul`, four items at most, each one concrete claim. Only list commitments the product actually keeps.

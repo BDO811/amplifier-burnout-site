@@ -1,0 +1,1 @@
+StatCard shows one number in the display face with a caption and an optional mono source line, over a hairline. Only use numbers that are cited on the page; never invent a statistic. Put the source in `source` so it matches the numbered sources at the foot of the page.
