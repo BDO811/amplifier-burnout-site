@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation | Amplifier Health</title>
+<meta name="description" content="How to add, use, and remove the Amplifier app for Zoom and the Amplifier for Google Meet Chrome extension.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;600&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design-system/tokens.css">
+<style>
+:root{--bg:var(--surface-100);--muted:var(--ink-muted);--line:var(--rule);--accent:var(--signal-fatigue);--green:var(--brand)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Inter,system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:56px 16px 96px}
+.brand{font:500 28px 'Cormorant Garamond',Georgia,serif;color:var(--green);text-decoration:none}
+.kicker{font:700 13px 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:40px}
+h1{font:300 clamp(40px,7vw,60px)/1.05 'Cormorant Garamond',Georgia,serif;color:var(--ink);margin:12px 0 8px}
+h1 em{display:block;color:var(--muted)}
+h2{font:700 13px 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:36px 0 6px;padding-top:20px;border-top:1px solid var(--line)}
+h3{font:600 15px Inter,system-ui,sans-serif;color:var(--ink);margin:20px 0 4px}
+p,li{margin:8px 0}
+ol,ul{padding-left:22px}
+a{color:var(--accent)}
+.meta{font:13px 'JetBrains Mono',monospace;color:var(--muted)}
+.rule{height:2px;background:var(--accent);margin:28px 0 8px}
+.note{background:var(--panel);color:var(--panel-ink);padding:16px 20px;border-radius:var(--radius-md);margin:24px 0;font:14px/1.6 'JetBrains Mono',monospace}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font:12px 'JetBrains Mono',monospace;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<main>
+<a class="brand" href="/">Amplifier</a>
+<div class="kicker">Amplifier Health</div>
+<h1>Documentation<em>Adding, using, and removing Amplifier.</em></h1>
+<div class="rule"></div>
+<div class="meta">Covers the Amplifier app for Zoom and the Amplifier for Google Meet Chrome extension</div>
+
+<h2>Adding the app</h2>
+<h3>Zoom</h3>
+<ol>
+<li>Go to <a href="/">burnout.amplifierhealth.com</a> and select <strong>Add to Zoom</strong>, or install from the Zoom App Marketplace listing.</li>
+<li>Sign in to Zoom and authorize the requested permissions. Zoom returns you to Amplifier automatically.</li>
+<li>Create an Amplifier account with your email and a password, or sign in if you already have one, at <a href="/account/">burnout.amplifierhealth.com/account</a>.</li>
+<li>In your account dashboard, read the consent notice and turn on voice analysis. Analysis stays off until you do this step.</li>
+</ol>
+<h3>Google Meet</h3>
+<ol>
+<li>Install <a href="https://chromewebstore.google.com/detail/amplifier-for-google-meet/kdablajjomdenccggopicgkmddjgdcem" target="_blank" rel="noopener">Amplifier for Google Meet</a> from the Chrome Web Store.</li>
+<li>Open the extension icon, sign in with your Amplifier account (or create one), and agree to the consent notice.</li>
+<li>Join a Google Meet call. Select <strong>Start</strong> in the extension popup once you are unmuted.</li>
+</ol>
+
+<h2>Using Amplifier</h2>
+<p>Once consent is on, Amplifier samples about 30 seconds of audio at the start of a call and 10 seconds every 60 seconds after that, your own voice only. In Zoom this runs automatically in meetings you host once you are an authorized, consenting participant; in Google Meet you start and stop it from the extension popup.</p>
+<p>Your dashboard at <a href="/account/">burnout.amplifierhealth.com/account</a> shows daily Stress and Fatigue readings, trend history, and plan usage. History depth follows your plan: Spark (free) keeps 7 days, Groove 90 days, Encore 270 days. Manage your plan, payment method, and invoices from the billing link in your account settings.</p>
+<p>You can pause analysis at any time: use the Stop button in the Google Meet extension popup, or withdraw consent from your account dashboard to stop Zoom capture.</p>
+
+<h2>Removing the app</h2>
+<h3>Zoom</h3>
+<ol>
+<li>Sign in to the <a href="https://marketplace.zoom.us/" target="_blank" rel="noopener">Zoom App Marketplace</a>.</li>
+<li>Select <strong>Manage</strong> in the top right, then <strong>Added Apps</strong>.</li>
+<li>Find <strong>Amplifier</strong> and select <strong>Remove</strong>.</li>
+</ol>
+<p>Removing the app stops all future voice analysis immediately. Your past Stress and Fatigue results stay in your Amplifier account; they are not deleted by removing the Zoom connection. To delete your account and its data entirely, email the address below.</p>
+<h3>Google Meet</h3>
+<p>Open Chrome's extensions page, find Amplifier for Google Meet, and select Remove. You can also select <strong>Sign out</strong> or <strong>Withdraw consent</strong> from the extension popup first if you want to stop analysis without uninstalling.</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li><strong>Nothing happens after I select Start.</strong> Confirm you are signed in and have agreed to the consent notice; analysis stays off until consent is explicitly given.</li>
+<li><strong>Zoom shows no readings.</strong> RTMS capture only runs for the Zoom account that installed and authorized the app, and only once that user has turned on analysis in their dashboard.</li>
+<li><strong>Google Meet extension shows "Cannot read your Meet mute button."</strong> Reload the Meet tab; the extension needs to detect your mute state before it will capture audio.</li>
+<li><strong>I can't sign in.</strong> Use <strong>Forgot password?</strong> on the account page, or contact support below.</li>
+</ul>
+
+<h2>Support</h2>
+<p>For help beyond this page, see our <a href="/support">support page</a> or email <a href="mailto:amit@amplifierhealth.com">amit@amplifierhealth.com</a>.</p>
+
+<footer><span>Amplifier Health</span><a href="/">burnout.amplifierhealth.com</a></footer>
+</main>
+</body>
+</html>
