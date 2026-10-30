@@ -6,3 +6,8 @@
 th,caption{font-family:var(--mono);letter-spacing:.1em}
 input,select{background:var(--surface-100)}
 input[type=radio],input[type=checkbox],progress{accent-color:var(--brand)}
+
+/* Platform setup uses explicit success and action states, with text and icons. */
+#connections{margin:24px 0 36px}#connections>.section-heading{margin-bottom:12px}.platform-connection{border-top:1px solid var(--ink);padding:26px 0}.platform-connection:first-child{margin-top:24px}.platform-connection h3{margin:0;font-size:24px}.platform-connection .section-heading{margin-bottom:18px}.connection-status{font-size:13px;font-weight:bold}.is-ready{--connection-color:#176b3a}.needs-action{--connection-color:#a3201a}.connection-status{color:var(--connection-color)}.platform-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0 0 18px}.platform-steps li{border:1px solid var(--connection-color);border-top:4px solid var(--connection-color);padding:16px 12px;min-width:0}.platform-steps strong{display:block;font-size:14px;margin-bottom:8px}.platform-steps span{display:block;color:var(--connection-color);font-size:13px;overflow-wrap:anywhere}.platform-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.platform-connection .note{max-width:90ch;color:var(--ink)}#connections .section-heading{flex-wrap:wrap}header nav{flex-wrap:wrap}@media(max-width:850px){.platform-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.platform-steps{grid-template-columns:1fr}.platform-connection .section-heading{align-items:start;flex-direction:column}header{flex-wrap:wrap}}
+
+header img{filter:brightness(0)}

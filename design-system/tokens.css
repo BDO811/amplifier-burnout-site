@@ -1,24 +1,24 @@
 /* Amplifier Burnout: generated from tokens.json */
 :root, [data-theme="apple-white"] {
-  --surface-100: #ffffff;
-  --surface-200: #f5f5f7;
-  --ink: #1d1d1f;
-  --ink-muted: #6e6e73;
+  --surface-100: #F0EAE0;
+  --surface-200: #E8E1D6;
+  --ink: #000000;
+  --ink-muted: #2E2E2E;
   --rule: #d2d2d7;
   --panel: #000000;
-  --panel-ink: #ffffff;
-  --brand: #0071e3;
-  --on-brand: #ffffff;
+  --panel-ink: #F0EAE0;
+  --brand: #000000;
+  --on-brand: #F0EAE0;
   --signal-fatigue: #2a2f8f;
   --signal-stress: #c25f00;
-  --state-baseline: #256b45;
+  --state-baseline: #000000;
   --state-watch: #9a6a00;
   --state-elevated: #b3480a;
   --state-high: #a3201a;
-  --focus: #0071e3;
+  --focus: #000000;
   --panel-fatigue: #a9aef2;
   --panel-stress: #f0a63a;
-  --panel-good: #6fcf97;
+  --panel-good: #F0EAE0;
   --panel-alert: #ff6b5e;
 }
 :root {
@@ -29,12 +29,12 @@
   --space-6: 24px;
   --space-8: 32px;
   --space-12: 48px;
-  --radius-sm: 4px;
-  --radius-md: 10px;
+  --radius-sm: 0;
+  --radius-md: 0;
   --radius-pill: 999px;
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-sans: Inter, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-display: Georgia, serif;
+  --font-sans: Georgia, serif;
+  --font-mono: "Courier New", monospace;
 }
 .display-xl { font-family: var(--font-display); font-size: 64px; line-height: 60px; font-weight: 300; }
 .display-xl-italic { font-family: var(--font-display); font-size: 64px; line-height: 60px; font-weight: 300; font-style: italic; }
