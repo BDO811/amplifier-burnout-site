@@ -56,7 +56,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font:12
 <p>Voice samples travel over encrypted connections to Amplifier's backend on Google Cloud and to Amplifier's acoustic analysis service, which returns the estimates. Account sign in is handled by Google Firebase. These providers process data on our behalf. We do not share your results with your employer or any other third party unless you choose to.</p>
 
 <h2>Retention</h2>
-<p>Raw audio is discarded after analysis. Your meeting audio and derived results are not used to train models. Derived results and consent records are kept while your account is active. Delete your account and we delete them.</p>
+<p>We do not store audio. Raw audio is never written to disk: our Zoom and Google Meet capture service holds each voice sample only in memory for the seconds it takes to prepare it, then sends it to Amplifier's acoustic analysis service and wipes its own copy immediately. The analysis service processes that audio in memory to produce your stress and fatigue estimates and deletes it immediately afterward; it does not retain it, write it to persistent storage, or use it to train models. Only the derived results (your scores, the meeting identifier, timestamps, and your consent record) are kept, and only while your account is active. Delete your account and we delete them.</p>
 
 <h2>Your choices</h2>
 <ol>
