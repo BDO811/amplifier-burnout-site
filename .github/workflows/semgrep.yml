@@ -26,7 +26,7 @@ jobs:
             --sarif --output semgrep-results.sarif
       - name: Upload SARIF report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: semgrep-results
           path: semgrep-results.sarif
